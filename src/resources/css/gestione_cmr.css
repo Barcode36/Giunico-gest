@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Poppins;
+    src: url("/resources/fonts/Poppins-Medium.ttf");
+}
+.radio {
+	-fx-font-size: 2em;
+	-fx-font-weight: bold;
+}
+.table_view {
+	-fx-font-family: Poppins;
+}
+.table-column {
+	-fx-alignment: CENTER;
+}
+.scroll_pane {
+	-fx-alignment: CENTER;
+}
+.field {
+	-fx-max-width: 250px;
+	-fx-alignment: CENTER;
+	-fx-font-family: Poppins;
+}

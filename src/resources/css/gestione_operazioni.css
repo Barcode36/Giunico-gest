@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Poppins;
+    src: url("/resources/fonts/Poppins-Medium.ttf");
+}
+.error_validation {
+	/*-fx-background-color: #FF0000;*/
+	-fx-text-fill: #FF0000;
+}
+.table_view {
+	-fx-font-family: Poppins;
+}
+.table-column {
+	-fx-alignment: CENTER;
+}
+.scroll_pane {
+	-fx-alignment: CENTER;
+}
+.field {
+	-fx-max-width: 250px;
+	-fx-alignment: CENTER;
+	-fx-font-family: Poppins;
+}
+.title_separator {
+	-fx-font-family: Poppins;
+	-fx-font-weight: bold;
+}

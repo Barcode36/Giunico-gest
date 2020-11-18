@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.GestioneCMRController">
+   <center>
+      <VBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane fx:id="scroll_pane" fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="200.0">
+               <content>
+                  <TableView fx:id="table_operazioni" maxWidth="1.7976931348623157E308" prefWidth="1278.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <Button fx:id="button_sollecitabili_datacarico" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sollecitabili_data_carico" text="SOLLECITABILI (per data carico)" textAlignment="CENTER">
+               <font>
+                  <Font name="Poppins Medium" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="button_stampa_per_raccoglitore" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#stampa_per_raccoglitore" text="Stampa per raccoglitore" textAlignment="CENTER">
+               <font>
+                  <Font name="Poppins Medium" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <VBox maxWidth="1.7976931348623157E308" prefHeight="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="logo_giunico" fitHeight="250.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" translateX="30.0">
+                     <image>
+                        <Image url="@../images/logo_giunico.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="exit_button" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="70.0" text="ESCI" translateX="400.0">
+                     <font>
+                        <Font name="Poppins Regular" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox fx:id="hbox_1" alignment="CENTER" prefHeight="60.0">
+               <children>
+                  <Button fx:id="button_refresh_table" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#refreshTable" text="Aggiorna tabella">
+                     <font>
+                        <Font name="Poppins Medium" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox fx:id="hbox_2" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="60.0" />
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

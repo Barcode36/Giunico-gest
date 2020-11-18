@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Poppins;
+    src: url("/resources/fonts/Poppins-Medium.ttf");
+}
+.table_view {
+	-fx-font-family: Poppins;
+}
+.list_view {
+	-fx-font-family: Poppins;
+	-fx-font-weight: bold;
+	-fx-font-size: 1em;
+}
+.table-column {
+	-fx-alignment: CENTER;
+}
+.scroll_pane {
+	-fx-alignment: CENTER;
+}
+.field {
+	-fx-max-width: 250px;
+	-fx-alignment: CENTER;
+	-fx-font-family: Poppins;
+}
+#column_cliente {
+	-fx-font-weight: bold;
+}
+.chart-series-line {
+    -fx-effect: null;
+}
+
+.chart-series-area-line {
+	-fx-stroke-width: 2px;
+}
+.chart-area-symbol {
+    -fx-background-radius: 4px; /* makes sure this remains circular */
+    -fx-padding: 5px;
+}
+.default-color0.chart-series-area-line { -fx-stroke: #F706B3; }
+.default-color0.chart-area-symbol { -fx-background-color: #F706B3, #FFFFFF; }
+.default-color0.chart-series-area-fill { -fx-fill: #F706B333; }

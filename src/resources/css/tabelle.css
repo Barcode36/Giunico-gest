@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Poppins;
+    src: url("/resources/fonts/Poppins-Medium.ttf");
+}
+.error_validation {
+	/*-fx-background-color: #FF0000;*/
+	-fx-fill: #FF0000;
+}
+.table_view {
+	-fx-font-family: Poppins;
+}
+.table-column {
+	-fx-alignment: CENTER;
+}
+.scroll_pane {
+	-fx-alignment: CENTER;
+}
+.field {
+	-fx-max-width: 250px;
+	-fx-alignment: CENTER;
+	-fx-font-family: Poppins;
+}
+#counter {
+	-fx-alignment: CENTER;
+	-fx-font-family: Poppins;
+	-fx-font-size: 1.5em;
+}
+.tab {
+	-fx-font-size: 2em;
+	-fx-font-family: Poppins;
+	-fx-max-height: 100px;
+}
+.title_separator {
+	-fx-font-family: Poppins;
+	-fx-font-weight: bold;
+	-fx-font-size: 2em;
+	-fx-padding: 10px;
+    -fx-border-insets: 10px;
+    -fx-background-insets: 10px;
+}
+.text_saldo {
+	-fx-font-family: Poppins;
+	-fx-font-weight: bold;
+	-fx-font-size: 1.5em;
+}

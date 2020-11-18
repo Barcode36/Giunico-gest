@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.OperazioniClienteController">
+   <center>
+      <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="450.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="info_cliente" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleziona un cliente dal menù e un intervallo di date">
+               <font>
+                  <Font name="Poppins Medium" size="24.0" />
+               </font>
+            </Text>
+            <ScrollPane fx:id="scroll_pane" fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="350.0" prefWidth="200.0" />
+            <Text fx:id="riepilogo_fatture" strokeType="OUTSIDE" strokeWidth="0.0" text="RIEPILOGO FATTURE">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Poppins Medium" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="riepilogo_bonifici" strokeType="OUTSIDE" strokeWidth="0.0" text="RIEPILOGO BONIFICI">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Poppins Medium" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="riepilogo_saldo" strokeType="OUTSIDE" strokeWidth="0.0" text="SALDO TOTALE">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Poppins Medium" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="generate_pdf_button" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" text="GENERA PDF">
+               <font>
+                  <Font name="Poppins Medium" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <VBox maxWidth="1.7976931348623157E308" prefHeight="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="100.0">
+               <children>
+                  <ImageView fx:id="logo_giunico" fitHeight="250.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" translateX="30.0">
+                     <image>
+                        <Image url="@../images/logo_giunico.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="exit_button" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="70.0" text="ESCI" translateX="400.0">
+                     <font>
+                        <Font name="Poppins Regular" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox fx:id="hbox_1" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="50.0" />
+            <HBox fx:id="hbox_2" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+               <children>
+                  <DatePicker fx:id="field_data_iniziale" promptText="Data iniziale">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </DatePicker>
+                  <DatePicker fx:id="field_data_finale" promptText="Data finale">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </DatePicker>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
